@@ -27,5 +27,13 @@ function merge(firstHalf, secondHalf){
 }
 
 function mergeSort(array) {
+  let midPoint = array.length/2
+  let firstHalf = array.slice(0, midPoint)
+  let secondHalf = array.slice(midPoint, array.length)
   
+  if (array.length === 1) {
+    return array
+  } else {
+    merge(mergeSort(firstHalf), mergeSort(secondHalf))
+  }
 }
