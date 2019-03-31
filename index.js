@@ -23,5 +23,5 @@ function merge(firstHalf, secondHalf){
       sorted.push(currentMin)
     }
   }
-  return sorted
+  return sorted.concat(firstHalf).concat(secondHalf)
 }
