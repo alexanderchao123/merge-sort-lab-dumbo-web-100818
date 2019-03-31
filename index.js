@@ -13,12 +13,12 @@ function findMinAndRemoveSorted(array) {
 }
 
 function merge(firstHalf, secondHalf){
-    let sorted = []
-    while(firstHalf.length !== 0 && secondHalf.length !== 0) {
-      if (firstHalf[0] < secondHalf[0]) {
-        let currentMin = findMinAndRemoveSorted(firstHalf)
-        sorted.push(currentMin)
-      }
+  let sorted = []
+  while(firstHalf.length !== 0 && secondHalf.length !== 0) {
+    if (firstHalf[0] < secondHalf[0]) {
+      let currentMin = findMinAndRemoveSorted(firstHalf)
+      sorted.push(currentMin)
     }
-    return sorted
+  }
+  return sorted
 }
