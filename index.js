@@ -34,6 +34,6 @@ function mergeSort(array) {
   if (array.length < 2) {
     return array
   } else {
-    merge(mergeSort(firstHalf), mergeSort(secondHalf))
+    return merge(mergeSort(firstHalf), mergeSort(secondHalf))
   }
 }
