@@ -31,7 +31,7 @@ function mergeSort(array) {
   let firstHalf = array.slice(0, midPoint)
   let secondHalf = array.slice(midPoint, array.length)
   
-  if (array.length === 1) {
+  if (array.length < 2) {
     return array
   } else {
     merge(mergeSort(firstHalf), mergeSort(secondHalf))
